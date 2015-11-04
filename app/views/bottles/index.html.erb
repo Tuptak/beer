@@ -1,0 +1,8 @@
+<h1>Piwka</h1>
+
+<% @bottles.each do |f|%>
+	<br><%= link_to f.title, bottle_path(f) %>
+
+<% end %>
+<br>
+<%= link_to "New", new_bottle_path %>

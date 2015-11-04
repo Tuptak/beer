@@ -1,0 +1,7 @@
+<%= simple_form_for @bottle, html: {multipart: true} do |f| %>
+  <%= f.input :title %>
+  <%= f.input :box %>
+  <%= f.input :vote %>
+  <%= f.input :avatar, as: :file %>
+  <%= f.button :submit %>
+<% end %>

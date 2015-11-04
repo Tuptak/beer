@@ -1,0 +1,17 @@
+<h1><%= @bottle.title%></h1>
+<h1><%= @bottle.box%></h1>
+<h1><%= @bottle.vote%></h1>
+<br>
+
+<%= image_tag @bottle.avatar.url  %>
+<br>
+<%= link_to "Back", bottles_path %>
+<br>
+<%= link_to "Edit", edit_bottle_path(@bottle) %>
+<br>
+<%= link_to "Delete", @bottle,method: :delete %>
+
+
+
+
+
